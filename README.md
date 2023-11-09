@@ -7,8 +7,12 @@ to do app with HTMX, Perl Dancer2 and planetscale
     #get .env from planetscale
     cp ../.env .
     export $(grep -v '^#' .env | xargs)
-    #fly secrets set $(grep -v '^#' .env | xargs)
+    #docker
     sudo docker build -t todoappimg .
     sudo docker run -d --name todoapp1 --env-file .env -p 3000:3000 todoappimg
     
 open http:://localhost:3000
+
+    #fly.io
+    fly secrets set $(grep -v '^#' .env | xargs)
+    fly launch
