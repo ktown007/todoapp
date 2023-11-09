@@ -1,0 +1,5 @@
+<ul>
+{{#list}}
+    <li hx-post="/delete" hx-target="#list" hx-vals='{"id":"{{id}}","task":"{{task}}"}'>{{task}}</li>
+{{/list}}
+</ul>
