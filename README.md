@@ -19,3 +19,5 @@ open http:://localhost:3000
     #run on fly.io
     fly secrets set $(grep -v '^#' .env | xargs)
     fly launch
+
+see tutorial here: [naughtylist](/ktown007/todoapp/blob/main/naughty.md)
