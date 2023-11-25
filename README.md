@@ -21,3 +21,5 @@ open http:://localhost:3000
     fly launch
 
 see tutorial here: [naughtylist](https://github.com/ktown007/todoapp/blob/main/naughty.md)
+
+<img src="https://raw.githubusercontent.com/ktown007/todoapp/main/public/naughty.northpole.io.png" />
